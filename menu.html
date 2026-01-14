@@ -1,5 +1,5 @@
 <div class="nav-wrap">
-	<div class="nav-container max-h-42">
+	<div class="nav-container max-h-basic">
 		<div class="nav-logo">
 			<a href="index.html"><span class="top-logo">메인으로 가기</span></a>
 		</div>
@@ -57,10 +57,10 @@
 	$(document).ready(function () {
 		$('.nav-menu').hover(
 			function () {
-				$('.nav-container').removeClass('max-h-42').addClass('max-h-100');
+				$('.nav-container').removeClass('max-h-basic').addClass('max-h-100');
 			},
 			function () {
-				$('.nav-container').removeClass('max-h-100').addClass('max-h-42');
+				$('.nav-container').removeClass('max-h-100').addClass('max-h-basic');
 			}
 		);
 
