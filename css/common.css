@@ -1,186 +1,9 @@
-*,
-*:before,
-*:after {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font: inherit;
-	vertical-align: baseline;
-}
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-	display: block;
-}
-
-ol,
-ul,
-li {
-	list-style: none;
-}
-
-html {
-	font-size: 62.5%;
-	/* rem 기반을 10px로 */
-	line-height: 1.5;
-	font-family: "Pretendard Variable", Pretendard, Noto Sans KR, Apple SD Gothic Neo, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-}
-
-a,
-a:hover,
-a:focus {
-	color: inherit;
-	text-decoration: none;
-	word-break: break-all;
-}
-
-button {
-	word-break: keep-all;
-	cursor: pointer;
-	background: transparent;
-	border: 0;
-}
-
-blockquote,
-q {
-	quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-	content: '';
-	content: none;
-}
-
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-audio,
-canvas,
-embed,
-iframe,
-img,
-object,
-svg,
-video {
-	display: block;
-}
-
-img,
-video {
-	height: auto;
-	max-width: 100%;
-}
-
-figure img {
-	width: 100%;
-}
-
-
 .nav-wrap {
 	position: fixed;
 	display: flex;
 	width: 100%;
 	max-height: 100vh;
-	padding: 1.5rem 4rem 1rem;
+	padding: 1rem 2rem 0.5rem 2rem;
 	color: #fff;
 	background-color: var(--main-color);
 	z-index: 100;
@@ -207,16 +30,11 @@ figure img {
 
 .top-logo {
 	display: block;
-	width: 11.8rem;
-	height: 2.3rem;
-	background-image: url(../images/top_logo_wh.png);
+	width: 8rem;
+	aspect-ratio: 100 / 17;
+	background-image: url(../images/logo_wh.png);
 	background-size: 100% 100%;
 	text-indent: -9999px;
-}
-
-.nav-logo img {
-	height: 2.3rem;
-	width: auto;
 }
 
 .nav-menu-list {
@@ -225,7 +43,7 @@ figure img {
 }
 
 .nav-menu-list button {
-	font-size: 1.8rem;
+	font-size: 1.1rem;
 	line-height: 1.4;
 	font-weight: 500;
 	color: inherit;
@@ -235,21 +53,21 @@ figure img {
 }
 
 .nav-menu-list li {
-	min-width: 14rem;
+	min-width: 10rem;
 }
 
 .nav-menu-list li ul {
-	padding-bottom: 5rem;
+	padding-bottom: 3rem;
 }
 
 .nav-menu-list li ul li {
 	margin-top: 1rem;
-	font-size: 1.4rem;
+	font-size: 0.9rem;
 }
 
 .nav-menu-list li ul li a:hover {
-	/*    opacity: .8;*/
-	color: #000;
+	opacity: .5;
+	text-decoration: none;
 }
 
 .nav-right {
@@ -262,36 +80,11 @@ figure img {
 
 .nav-right-text {
 	display: block;
-	line-height: 2.6rem;
-	font-size: 1.1rem;
+	line-height: 1.5rem;
+	font-size: 0.7rem;
 	margin-top: 0.5rem;
-	border: 1px solid #fff;
+	border: 0.5px solid #fff;
 	padding: 0 1rem;
-	border-radius: 1.3rem;
-}
-
-.top-icon {
-	display: block;
-	width: 2.6rem;
-	height: 2.6rem;
-	margin-top: 0.5rem;
-	text-indent: -9999px;
-	background-repeat: no-repeat;
-}
-
-.top-icon.pdf {
-	background: url(../images/icon_pdf.png);
-	background-size: 100% 100%;
-}
-
-.top-icon.blog {
-	background: url(../images/icon_blog.png);
-	background-size: 100% 100%;
-}
-
-.top-icon.instagram {
-	background: url(../images/icon_instagram.png);
-	background-size: 100% 100%;
 }
 
 .nav-right a:hover {
@@ -299,7 +92,7 @@ figure img {
 }
 
 .max-h-42 {
-	max-height: 4.2rem;
+	max-height: 2.625rem;
 }
 
 .max-h-100 {
@@ -318,19 +111,6 @@ figure img {
 	background-image: url(../images/top_logo.png);
 }
 
-.black .nav-wrap .top-icon.pdf {
-	background-image: url(../images/icon_pdf_black.png);
-}
-
-.black .nav-wrap .top-icon.blog {
-	background-image: url(../images/icon_blog_black.png);
-}
-
-.black .nav-wrap .top-icon.instagram {
-	background: url(../images/icon_instagram_black.png);
-	background-size: 100% 100%;
-}
-
 .black .nav-menu-list li ul li a:hover {
 	color: #999;
 }
@@ -339,98 +119,6 @@ figure img {
 	display: none;
 }
 
-.floater {
-	position: fixed;
-	bottom: 3rem;
-	right: 3rem;
-	z-index: 100;
-}
-
-.float_subscribe {
-	width: 10rem;
-	height: 10rem;
-	padding: 1.5rem;
-	border-radius: 50%;
-	overflow: hidden;
-	background-color: var(--main-color);
-	box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
-}
-
-.float_subscribe span {
-	display: block;
-	text-indent: -9999px;
-	width: 100%;
-	height: 100%;
-	background-image: url(../images/icon_subscribe.png);
-	background-size: 100% 100%;
-}
-
-.footer-top {
-	background-color: var(--main-color);
-	padding: 4rem;
-}
-
-.footer-top-flex {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	font-size: 1.4rem;
-	color: white;
-	max-width: 120rem;
-	margin: 0 auto;
-}
-
-.black .footer-top-flex {
-	color: #000;
-}
-
-.footer-number-flex {
-	display: flex;
-	gap: 1rem;
-}
-
-.footer-number {
-	font-size: 4.4rem;
-	font-family: Noto Sans KR;
-	font-weight: 700;
-	letter-spacing: -0.22rem;
-	vertical-align: top;
-}
-
-.footer-number-desc {
-	display: table-cell;
-	padding-top: 1.5rem;
-	line-height: 1.5;
-	letter-spacing: -0.03rem;
-	vertical-align: top;
-}
-
-.footer-bottom {
-	padding: 4rem 0;
-	max-width: 1200px;
-	margin: 0 auto;
-}
-
-.footer-bottom-flex {
-	display: flex;
-	gap: 1rem;
-}
-
-.footer-bottom-text {
-	font-size: 1.4rem;
-}
-
-.footer-bottom-text span {
-	margin-right: 1rem;
-}
-
-.footer-bottom-logo a {
-	display: block;
-	width: 179px;
-	height: 40px;
-	background: url(../images/foot_logo.png) 0 0 no-repeat;
-	background-size: 100% auto;
-	margin-right: 20px;
-}
 
 @media (max-width:768px) {
 	.nav-wrap {
@@ -513,67 +201,5 @@ figure img {
 	.open .icon-hamburg span:nth-child(3) {
 		margin: -1px;
 		transform: rotate(-45deg);
-	}
-
-	.floater {
-		right: 2rem;
-		bottom: 2rem;
-	}
-
-	.float_subscribe {
-		width: 6rem;
-		height: 6rem;
-		padding: 0.8rem;
-	}
-
-	.footer-top {
-		padding: 2rem;
-	}
-
-	.footer-top-flex {
-		display: flex;
-		flex-direction: column;
-		gap: 1rem;
-	}
-
-	.footer-number-flex {
-		flex-direction: column;
-		gap: 0;
-	}
-
-	.footer-number {
-		font-size: 2rem;
-		letter-spacing: 0;
-	}
-
-	.footer-number-desc {
-		padding-top: 0;
-		font-size: 1.2rem;
-	}
-
-	.footer-bottom-flex {
-		flex-direction: column;
-		text-align: center;
-	}
-
-	.footer-bottom {
-		padding: 3rem 2rem;
-	}
-
-	.footer-bottom-text span {
-		display: block;
-		margin-right: 0;
-		font-size: 1.1rem;
-		color: #999;
-	}
-
-	.copyright {
-		font-size: 1.1rem;
-		color: #999;
-		margin-top: 1rem;
-	}
-
-	.footer-bottom-logo a {
-		margin: 0 auto;
 	}
 }
