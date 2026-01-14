@@ -1,13 +1,5 @@
 $(document).ready(function () {
 
-    //메인 슬라이더
-    $('.photo-slider').slick({
-        autoplay: true, // 자동 재생
-        autoplaySpeed: 2000, // 3초마다 변경
-        arrows: false
-    });
-
-
     //스크롤에 따라 클래스 붙이고 떼기    
     let $target = $("#target");
     let targetTop = $target.offset().top; // 타겟의 상단 높이
@@ -29,7 +21,7 @@ $(document).ready(function () {
             $target.removeClass("landing landing-end");
         }
     });
-  
+
     $("#header").load("menu.html");
     $("#footer").load("footer.html");
 
