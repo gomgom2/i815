@@ -1,0 +1,87 @@
+<div class="nav-wrap">
+	<div class="nav-container max-h-42">
+		<div class="nav-logo">
+			<a href="index.html"><span class="top-logo">메인으로 가기</span></a>
+			<div class="nav-vol"><span>January 2026 <b>Vol.245</b></span></div>
+		</div>
+		<div class="nav-menu">
+			<ul class="nav-menu-list">
+				<li>
+					<button>테마 그린</button>
+					<ul>
+						<li><a href="sub_11.html">테마 인터뷰</a></li>
+						<li><a href="sub_13.html">테마 인사이트</a></li>
+					</ul>
+				</li>
+				<li>
+					<button>삶에 그린</button>
+					<ul>
+						<li><a href="sub_20.html">트렌드 탐구</a></li>
+						<li><a href="sub_21.html">고서 탐구</a></li>
+						<li><a href="sub_22.html">시골집꾸 라이프</a></li>
+						<li><a href="sub_23.html">셀럽의 식탁</a></li>
+					</ul>
+				</li>
+				<li>
+					<button>꿈에 그린</button>
+					<ul>
+						<li><a href="sub_41.html">책읽는 농업과학자</a></li>
+						<li><a href="sub_31.html">청년농UP 청년꿈UP</a></li>
+						<li><a href="sub_32.html">알쓸농잡(JOB)</a></li>
+						<li><a href="sub_33.html">이로운맛, 농업이 미래다</a></li>
+					</ul>
+				</li>
+				<li>
+					<button>쉼에 그린</button>
+					<ul>
+						<li><a href="sub_42.html">워케이션&런케이션 핫플</a></li>
+						<li><a href="sub_43.html">치유농장</a></li>
+						<li><a href="sub_44.html">방구석 시골 영화관</a></li>
+						<li><a href="sub_45.html">푸드테라피</a></li>
+						<li><a href="sub_46.html">힙한 맛남</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="nav-right">
+			<a href="https://www.rda.go.kr/board/board.do?mode=list&prgId=syb_webzineEntry" target="_blank"><span
+					class="nav-right-text">지난호 보기</span></a>
+			<a href="https://lib.rda.go.kr/search/mediaView.do?mets_no=000000322576" target="_blank"><span
+					class="top-icon pdf">PDF 보기</span></a>
+			<a href="https://blog.naver.com/rda2448" target="_blank"><span class="top-icon blog">블로그</span></a>
+			<a href="https://www.instagram.com/greenmagazine_rda/" target="_blank"><span
+					class="top-icon instagram">인스타그램</span></a>
+		</div>
+		<div class="hamburg">
+			<div class="icon-hamburg">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="floater">
+	<div class="float_subscribe">
+		<a href="https://www.rda.go.kr/event/mailling/index.jsp" target="_blank">
+			<span>구독신청하기</span>
+		</a>
+	</div>
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function () {
+		$('.nav-menu').hover(
+			function () {
+				$('.nav-container').removeClass('max-h-42').addClass('max-h-100');
+			},
+			function () {
+				$('.nav-container').removeClass('max-h-100').addClass('max-h-42');
+			}
+		);
+
+		$('.hamburg').on('click', function () {
+			$('.nav-container').toggleClass('open');
+		});
+	});
+</script>

@@ -1,0 +1,495 @@
+.theme-story {
+	width: 100%;
+	background-color: var(--main-color);
+	padding-top: 6.7rem;
+}
+.story-container {
+	padding: 4rem 4rem 5rem;
+}
+.story-flex {
+	display: flex;
+	justify-content: space-between;
+}
+.story-image {
+	overflow: hidden;
+	width: 60%;
+	border-radius: 2.5rem;
+}
+.story-image img {
+	display: block;
+	width: 100%;
+}
+.photo-slider {
+	width: 100%;
+}
+.story-text {
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	padding-left: 4rem;
+	color: #fff;
+}
+.story-text h2 {
+	font-size: 4rem;
+	font-family: GowunDodum-Regular;
+	line-height: 1.4;
+	margin-bottom: 3rem;
+}
+.story-text h2 span {
+	display: block;
+}
+.story-text h2 figure {
+	width: 6rem;
+}
+.story-desc {
+	font-size: 1.6rem;
+	font-weight: 300;
+	line-height: 1.8;
+}
+.theme-container {
+	padding: 4rem 4rem 8rem;
+	background-color: var(--main-color);
+}
+.theme-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 3rem;
+}
+.theme-box {
+	position: relative;
+	border-radius: 2.5rem;
+	overflow: hidden;
+	transition: transform 0.3s ease-in-out;
+}
+.theme-box:hover {
+	transform: scale(1.05);
+}
+.theme-text {
+	position: absolute;
+	left: 3rem;
+	top: 3rem;
+}
+.theme-text span {
+	display: block;
+    width: fit-content;
+    padding: 0px 16px;
+    border-radius: 20px;
+    color: #333;
+    font-family: Paperlogy-8ExtraBold;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    font-weight: 400;
+    background: #fff;
+    margin-bottom: 1rem;
+}
+.theme-text h4 {
+	font-size: 3.2rem;
+	font-weight: 600;
+	line-height: 1.3;
+	font-family: Paperlogy-7Bold;
+	margin: 0.5rem 0;
+}
+.theme-text h5 {
+	font-size: 2rem;
+	line-height: 1.3;
+	letter-spacing: -0.1rem;
+	margin: 0;
+}
+.bottom:after {
+	content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+    z-index: 2;
+}
+.bottom .theme-text {
+	top: auto;
+	bottom: 3rem;
+	z-index: 3;
+	color: #fff;
+}
+.bottom .theme-text em {
+	display: block;
+	color: #ecf3cf;
+}
+.section-title {
+	font-size: 3rem;
+	font-family: Paperlogy-9Black;
+	margin-bottom: 2rem;
+	color: #777777;
+}
+.section-title em {
+	font-size: 5rem;
+	color: var(--main-color);
+}
+.life-container {
+	padding: 6rem 4rem;
+}
+.life-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 5rem;
+}
+.life-image {
+	width: 100%;
+	aspect-ratio: 1 / 1;
+	position: relative;
+}
+.life-image figure {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.life-box figure img {
+	transition: transform 0.3s ease-in-out;
+}
+.life-box:hover figure img {
+	transform: scale(1.1);
+}
+.life-image h5 {
+	position: absolute;
+	top: 1.5rem;
+	left: 50%;
+	transform: translateX(-50%);
+	color: #fff;
+	font-size: 1.8rem;
+	font-family: Paperlogy-6SemiBold;
+}
+.life-image h5.text-black {
+	color: #000;
+}
+.life-text {
+	margin-top: 1rem;
+}
+.life-text span {
+	font-size: 2.4rem;
+	letter-spacing: -0.036rem;
+    word-break: keep-all;
+    font-family: Paperlogy-6SemiBold;
+}
+.life-text h4 {
+	font-size: 1.5rem;
+	color: #434548;
+	line-height: 160%;
+    letter-spacing: -.3px;
+    word-break: keep-all;
+}
+.dream-container {
+	padding: 2rem 4rem 8rem;
+}
+.dream-grid {
+	display: grid;
+	grid-template-columns: 3fr 4fr;
+	gap: 2rem;
+}
+.dream-left {
+	display: grid;
+	grid-template-rows: 1fr 2fr;
+	gap: 2rem;
+}
+.dream-right {
+	display: grid;
+	grid-template-rows: 2fr 1fr;
+	gap: 2rem;
+}
+.dream-box {
+	flex-basis: 20rem;
+	transition: transform 0.3s ease-in-out;
+}
+.dream-box:hover {
+	transform: scale(1.03);
+}
+.dream-box-container {
+	width: 100%;
+	height: 100%;
+	background-color: #999;
+	border-radius: 2.5rem;
+	overflow: hidden;
+	position: relative;
+}
+.dream-text {
+	position: absolute;
+	top: 3rem;
+	left: 3rem;
+}
+.dream-left-top {
+	flex-grow: 0;
+}
+.dream-left-top figure {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+.dream-left-top figure img {
+	width: auto;
+}
+.dream-left-bottom figure {
+	width: 100%;
+}
+.dream-right-top {
+	flex-grow: 1;
+}
+.dream-right-top figure {
+	width: 100%;
+	position: absolute;
+}
+.dream-right-bottom figure {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+.dream-right-bottom figure img {
+	max-height: 18rem;
+	width: auto;
+}
+.dream-text {
+	color: #fff;
+}
+.black.dream-text {
+	color: #000;
+}
+.dream-text span {
+	display: block;
+    width: fit-content;
+    padding: 0px 16px;
+    border-radius: 20px;
+    color: #333;
+    font-family: Paperlogy-8ExtraBold;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    font-weight: 400;
+    background: #fff;
+    margin-bottom: 10px;
+}
+.dream-text h4 {
+	font-size: 3rem;
+	font-weight: 500;
+	line-height: 1.3;
+	font-family: 'Paperlogy-5Medium';
+}
+.dream-text h5 {
+	font-size: 2.2rem;
+	font-weight: 500;
+}
+.dream-text h6 {
+	font-size: 1.6rem;
+	font-weight: 200;
+	margin-top: 1rem;
+}
+.bottom .dream-text {
+	top: auto;
+	bottom: 3rem;
+	z-index: 3;
+	color: #fff;
+}
+.bottom .dream-text em {
+	display: block;
+	color: #ecf3cf;
+}
+.healing-container {
+	padding: 10rem 4rem;
+	background-color: #f9f5ec;
+	position: relative;
+}
+.healing-title {
+	position: absolute;
+	left: 4rem;
+	top: 50vh;
+	transform: translateY(-50%);
+}
+.landing .healing-title {
+	position: fixed;
+	left: 4rem;
+	top: 50vh;
+	transform: translateY(-50%);
+}
+.landing-end .healing-title {
+	top: auto;
+	bottom: 50vh;
+	transform: translateY(50%);
+}
+.healing-flex {
+	padding-left: 39%;
+	display: flex;
+	gap: 3rem;
+}
+.healing-left {
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+}
+.healing-right {
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+	justify-content: center;
+}
+.healing-box {
+	position: relative;
+}
+.healing-box figure {
+	position: relative;
+	border-radius: 2.5rem;
+	overflow: hidden;
+}
+.healing-box figure:after {
+	content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 66%;
+        bottom: 0;
+        opacity: 0.5;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000);
+}
+.healing-text {
+	position: absolute;
+	bottom: 2rem;
+	left: 3rem;
+	color: #fff;
+	font-size: 2rem;
+	z-index: 3;
+}
+.healing-text span {
+    display: block;
+    width: fit-content;
+    padding: 0px 16px;
+    border-radius: 20px;
+    color: #333;
+    font-family: Paperlogy-8ExtraBold;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    font-weight: 400;
+    background: #fff;
+    margin-bottom: 10px;
+}
+.healing-text h4 {
+	font-size: 2.4rem;
+	font-weight: 500;
+	line-height: 1.3;
+	font-family: 'Paperlogy-5Medium';
+}
+@media (min-width:1024px)and (max-width:1279px) {
+	
+}
+
+@media (min-width:768px)and (max-width:1023px) {
+	
+}
+
+@media (max-width:767px) {
+
+	.story-container {
+		padding: 2rem 2rem 3rem;
+	}
+	.story-flex {
+		flex-direction: column;
+		gap: 2rem;
+	}
+	.story-image, .story-text {
+		width: 100%;
+	}
+	.story-text {
+		padding-left: 0;
+	}
+	.story-text h2 {
+		font-size: 2.5rem;
+		margin-bottom: 2rem;
+	}
+	.story-text h2 figure {
+		width: 4rem;
+	}
+	.story-text h2 span {
+		display: inline;
+	}
+	.story-desc p br {
+		display: none;
+	}
+	.theme-container {
+		padding: 2rem 2rem 3rem;
+	}
+	.theme-grid, .life-grid {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+	.life-grid {
+		gap: 3rem;
+	}
+	.life-container, .dream-container {
+		padding: 3rem 2rem;
+	}
+	.section-title em {
+		font-size: 3rem;
+	}
+	.dream-grid {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+	.dream-text h4 {
+		font-size: 1.6rem;
+	}
+	.dream-left-top figure {
+		height: 100%;
+		width: auto;
+		position: relative;
+		overflow: hidden;
+	}
+	.dream-left-top figure img {
+		height: 100%;
+		width: auto;
+		max-width: 200vw;
+		position: absolute;
+		right: -10rem;
+		bottom: 0;
+		object-fit: contain;
+	}
+	.dream-box.dream-right-top {
+		flex-basis: 30rem;
+	}
+	.dream-right-top figure {
+		height: 100%;
+		overflow: hidden;
+	}
+	.dream-right-top figure img {
+		height: 100%;
+		width: auto;
+		max-width: 200vw;
+		object-fit: contain;
+	}
+	.dream-text {
+		left: 2rem;
+	}
+	.dream-right-bottom .dream-text {
+		width: 15rem;
+		word-break: keep-all;
+	}
+	.healing-container {
+		padding: 2rem 2rem 3rem;
+	}
+	.landing-end .healing-title {
+		position: relative;
+		left: 0;
+		top: 0;
+		bottom: auto;
+	    transform: translateY(0);
+	}
+	.healing-flex {
+		padding-left: 0;
+		flex-direction: column;
+		gap: 2rem;
+	}
+	.healing-left {
+		gap: 2rem;
+	}
+	.healing-text {
+		left: 2rem;
+		font-size: 1.8rem;
+	}
+
+}
