@@ -122,9 +122,15 @@
 	display: none;
 }
 
-.footer-wrap {
-	padding: 2rem 2rem;
+.footer {
+	margin-top: 20rem;
+	padding: 3rem 0 2rem;
 	border-top: 0.5px solid #6e6e6e;
+}
+
+.footer-wrap {
+	max-width: 70rem;
+	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
 }
