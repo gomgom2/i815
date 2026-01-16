@@ -2,11 +2,17 @@
     --main-color: rgb(0, 212, 141);
     --max-width: 75rem;
     --gap-basic: 0.5rem;
-    --radius-basic: 0.5rem;
+    --radius-basic: 1rem;
+    --color-brown: #5B452E;
+    --color-purple: #795598;
+    --color-blue: #4462E3;
+    --color-deepblue: #362B61;
+    --color-orange: #F0914F;
+    --color-green: #4F7D7F;
 }
 
 body {
-    background-color: rgb(235, 235, 235);
+    /* background-color: rgb(235, 235, 235); */
     color: rgb(17, 17, 17);
 }
 
@@ -24,7 +30,7 @@ body {
     border-radius: 0 0 var(--radius-basic) var(--radius-basic);
     display: flex;
     justify-content: space-between;
-    min-height: 5rem;
+    min-height: 4rem;
 }
 
 .nav-logo {
@@ -66,4 +72,368 @@ body {
 
 .main-visual-video video {
     width: 100%;
+}
+
+.main-visual-text {
+    text-align: center;
+    width: 100%;
+    height: 15rem;
+    position: relative;
+    margin-top: var(--gap-basic);
+    border-radius: var(--radius-basic);
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.main-visual-text::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    aspect-ratio: 100 / 80;
+    background-image: url(../contents/main_visual_bg2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.main-visual-text::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 105%;
+    transform: translateX(20%) translateY(5%);
+    aspect-ratio: 100 / 83;
+    background-image: url(../contents/main_visual_bg3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.main-visual-text h1 {
+    font-family: sandoll-andante;
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    line-height: 1.3;
+}
+
+.main-visual-text span {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.main-visual-text p {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+
+.section {
+    width: 100%;
+    margin: 0 auto;
+    max-width: var(--max-width);
+    padding: 0 var(--gap-basic);
+}
+
+.section.banner {
+    margin-top: 8rem;
+    padding-top: 3rem;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.section.banner::before {
+    content: "";
+    display: block;
+    width: calc(100% - 1rem);
+    height: 1px;
+    background-color: #B7BDCB;
+    position: absolute;
+    top: 0;
+    left: 0.5rem;
+
+}
+
+.section h2 {
+    line-height: 1.1;
+    font-family: sandoll-andante;
+    font-weight: normal;
+    font-size: 2.4rem;
+    margin: 4rem 0 2rem;
+}
+
+.section h2 span {
+    color: var(--main-color);
+    margin-right: 0.5rem;
+}
+
+.section-body {
+    flex: 1;
+    display: grid;
+    gap: 1rem;
+}
+
+.new .section-body {
+    gap: 2rem;
+}
+
+.grid-new {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-deep {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-face {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-banner {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--radius-basic);
+    transition: 0.3s ease-out;
+}
+
+.grid-deep .grid-container {
+    aspect-ratio: 69 / 96;
+    margin-bottom: 2rem;
+}
+
+.grid-face .grid-container {
+    border: 1px solid #B7BDCB;
+    border-radius: 1rem;
+}
+
+.grid-banner .grid-container {
+    border: 1px solid #B7BDCB;
+    border-radius: 1rem;
+}
+
+.grid-container figure {
+    position: relative;
+    z-index: 1;
+}
+
+.grid-container:hover {
+    transform: translateY(-5%);
+}
+
+.deep .grid-container figure {
+    position: absolute;
+    bottom: 0;
+}
+
+.grid-text {
+    position: absolute;
+    z-index: 2;
+}
+
+.grid-new .grid-text {
+    bottom: 5%;
+    left: 5%;
+}
+
+.grid-deep .grid-text {
+    top: 5%;
+    left: 6%;
+}
+
+.grid-face .grid-text {
+    position: relative;
+    padding: 0.5rem 1.2rem;
+}
+
+.grid-banner .grid-text {
+    top: 50%;
+    left: 6%;
+    transform: translateY(-50%);
+}
+
+.category {
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: -0.02rem;
+    line-height: 2rem;
+    background-color: #fff;
+    width: fit-content;
+    padding: 0.1rem 1.2rem;
+    border: 1px solid #000;
+    border-radius: 1rem;
+}
+
+.category.sky {
+    background-color: #AADAFB;
+}
+
+.face .category {
+    border-color: #000;
+    background-color: #000;
+    color: #fff;
+}
+
+.grid-text h3 {
+    color: #fff;
+    line-height: 1.25;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.deep .grid-text h3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 0.5rem 0 1.5rem;
+}
+
+.face .grid-text h3 {
+    color: #000;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.banner .grid-text h3 {
+    color: #000;
+    padding: 0.5rem 0 0 0.5rem;
+    font-size: 1.3rem;
+    font-weight: normal;
+    line-height: 1.4;
+}
+
+.grid-banner .grid-container:nth-child(1) h3 {
+    font-family: GanaChocolate;
+}
+
+.grid-banner .grid-container:nth-child(2) h3 {
+    font-family: Aggravo;
+}
+
+.grid-text h3.black {
+    color: #000;
+}
+
+.grid-text h3 span {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.tag {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0.3rem;
+    gap: 0.3rem;
+}
+
+.tag span {
+    display: block;
+    width: fit-content;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: -0.02rem;
+    line-height: 1;
+    background-color: #fff;
+    width: fit-content;
+    padding: 0.3rem 1rem 0.25rem;
+    border: 0.5px solid #000;
+    border-radius: 1rem;
+    margin: 0.1rem 0.1rem 0 0;
+}
+
+.grid-new .tag span {
+    font-size: 0.9rem;
+}
+
+.grid-deep .grid-container {
+    --theme-color: #000;
+    background-color: var(--theme-bg);
+}
+
+
+.grid-deep .grid-container .category {
+    background-color: var(--theme-color);
+    border: 1px solid var(--theme-color);
+    color: #fff;
+}
+
+.grid-deep .grid-container h3 {
+    color: var(--theme-color);
+    font-family: var(--theme-font);
+}
+
+.grid-deep .grid-container .tag span {
+    color: var(--theme-color);
+    border: 0.5px solid var(--theme-color);
+    background: transparent;
+}
+
+.grid-deep .grid-container.brown {
+    --theme-color: var(--color-brown);
+    --theme-bg: #EBECED;
+    --theme-font: Pretendard;
+}
+
+.grid-deep .grid-container.purple {
+    --theme-color: var(--color-purple);
+    --theme-bg: #D9E7ED;
+    --theme-font: Yeongwol;
+}
+
+.grid-deep .grid-container.blue {
+    --theme-color: var(--color-blue);
+    --theme-bg: #F2DF92;
+    --theme-font: Pretendard;
+}
+
+.grid-deep .grid-container.deepblue {
+    --theme-color: var(--color-deepblue);
+    --theme-bg: #FAECDF;
+    --theme-font: YeogiOttaeJalnan;
+}
+
+.grid-deep .grid-container.orange {
+    --theme-color: var(--color-orange);
+    --theme-bg: #E0DFDF;
+    --theme-font: sandoll-andante;
+}
+
+.grid-deep .grid-container.green {
+    --theme-color: var(--color-green);
+    --theme-bg: #F0E4D2;
+    --theme-font: Pretendard;
+}
+
+.grid-deep .grid-container.purple h3 {
+    font-size: 2.2rem;
+    font-weight: normal;
+}
+
+.grid-deep .grid-container.orange h3 {
+    font-weight: normal;
+}
+
+.grid-deep .grid-container.green h3 {
+    font-weight: 300;
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.grid-deep .grid-container.green h3 span {
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1.6;
 }
