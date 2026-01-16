@@ -1,5 +1,5 @@
 :root {
-	--main-color: rgba(13, 49, 87, 1);
+	--main-color: #b12e29;
 	--color-brown: #5B452E;
 	--color-purple: #795598;
 	--color-blue: #4462E3;
@@ -11,38 +11,30 @@
 .main-visual {
 	position: relative;
 	width: 100%;
-	overflow: hidden;
+	background-color: var(--main-color);
 	margin-bottom: 3rem;
+	padding: 5rem 2rem;
 }
 
-.main-visual::after {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
+.main-visual-video {
+	aspect-ratio: 2.35 / 1;
+	overflow: hidden;
+	border-radius: 2rem;
+}
+
+.main-visual-video video {
 	width: 100%;
-	height: 100%;
-	background: linear-gradient(to top,
-			rgba(13, 49, 87, 1) 0%,
-			rgba(13, 49, 87, 1) 20%,
-			rgba(13, 49, 87, 0.5) 40%,
-			rgba(0, 0, 0, 0) 60%);
-	z-index: 1;
 }
 
 .main-visual-text {
-	position: absolute;
-	bottom: 10%;
-	left: 50%;
-	transform: translateX(-50%);
-	text-align: center;
 	color: #fff;
 	z-index: 2;
+	padding: 2rem 0 3rem;
 }
 
 .main-visual h1 {
 	font-family: Paperozi;
-	font-size: clamp(5rem, 6vw, 7rem);
+	font-size: clamp(5rem, 5vw, 6rem);
 	font-weight: 700;
 	letter-spacing: -0.02em;
 }
