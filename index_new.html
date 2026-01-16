@@ -25,23 +25,50 @@
 <body>
     <header class="header" id="header">
         <div class="nav-wrap">
-            <div class="nav-container">
+            <div class="nav-container max-h-basic">
                 <div class="nav-logo">
                     <a href="#"><span class="top-logo">메인으로 가기</span></a>
+                </div>
+                <div class="hamburg">
+                    <div class="icon-hamburg">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
                 <div class="nav-menu">
                     <ul class="nav-menu-list">
                         <li>
                             <button>새로 봄</button>
+                            <ul>
+                                <li><a href="sub_11.html">가치를 짓다</a></li>
+                                <li><a href="sub_12.html">문화를 잇다</a></li>
+                            </ul>
                         </li>
                         <li>
                             <button>깊이 봄</button>
+                            <ul>
+                                <li><a href="#">모두의 그날</a></li>
+                                <li><a href="#">다시, 봄</a></li>
+                                <li><a href="#">다시, 씀</a></li>
+                                <li><a href="#">공간의 시간</a></li>
+                                <li><a href="#">세, 개인의 시선</a></li>
+                                <li><a href="#">사물의 기억</a></li>
+                            </ul>
                         </li>
                         <li>
                             <button>마주 봄</button>
+                            <ul>
+                                <li><a href="#">행사 캘린더</a></li>
+                                <li><a href="#">독립기념관 소식</a></li>
+                                <li><a href="#">어린이 기자단</a></li>
+                            </ul>
                         </li>
                         <li>
                             <button>함께 봄</button>
+                            <ul>
+                                <li><a href="#">함께 만드는 이야기</a></li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
@@ -50,6 +77,35 @@
                     <a href="#" target="_blank"><span class="nav-right-text pdf">PDF 보기</span></a>
                 </div>
             </div>
+
+            <aside id="drawer" class="drawer">
+                <nav class="mnav">
+                    <h4>새로 봄</h4>
+                    <ul>
+                        <li><a href="sub_11.html">가치를 짓다</a></li>
+                        <li><a href="sub_12.html">문화를 잇다</a></li>
+                    </ul>
+                    <h4>깊이 봄</h4>
+                    <ul>
+                        <li><a href="#">모두의 그날</a></li>
+                        <li><a href="#">다시, 봄</a></li>
+                        <li><a href="#">다시, 씀</a></li>
+                        <li><a href="#">공간의 시간</a></li>
+                        <li><a href="#">세, 개인의 시선</a></li>
+                        <li><a href="#">사물의 기억</a></li>
+                    </ul>
+                    <h4>마주 봄</h4>
+                    <ul>
+                        <li><a href="#">행사 캘린더</a></li>
+                        <li><a href="#">독립기념관 소식</a></li>
+                        <li><a href="#">어린이 기자단</a></li>
+                    </ul>
+                    <h4>함께 봄</h4>
+                    <ul>
+                        <li><a href="#">함께 만드는 이야기</a></li>
+                    </ul>
+                </nav>
+            </aside>
         </div>
     </header>
 
@@ -325,6 +381,22 @@
             </div>
         </div>
     </footer>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.nav-menu').hover(
+                function () {
+                    $('.nav-container').removeClass('max-h-basic').addClass('max-h-100');
+                },
+                function () {
+                    $('.nav-container').removeClass('max-h-100').addClass('max-h-basic');
+                }
+            );
+            $('.hamburg').on('click', function () {
+                $('.nav-container').toggleClass('open');
+            });
+        });
+    </script>
 
 </body>
 
