@@ -1,6 +1,9 @@
 :root {
     --main-color: rgb(0, 212, 141);
     /* --main-color: #53a8cb; */
+    /* --main-color: #c0e900; */
+    /* --main-color: #f5a9ad; */
+    /* --main-color: #214371; */
     --hover-color: #4ca877;
     --max-width: 75rem;
     --gap-basic: 0.5rem;
