@@ -104,6 +104,19 @@
 
 .black .nav-wrap {
 	color: #000;
+	border-bottom: 1px solid #000;
+}
+
+.black .nav-wrap .max-h-basic {
+	max-height: 5.4rem;
+}
+
+.black .nav-wrap .nav-container {
+	padding: 1.4rem 2rem 0rem;
+}
+
+.black .nav-menu-list li ul li {
+	margin-top: 1.2rem;
 }
 
 .black .nav-wrap .nav-right-text {
@@ -111,7 +124,7 @@
 }
 
 .black .nav-wrap .top-logo {
-	background-image: url(../images/top_logo.png);
+	background-image: url(../images/logo_blue.png);
 }
 
 .black .nav-menu-list li ul li a:hover {
