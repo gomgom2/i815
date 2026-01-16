@@ -437,3 +437,91 @@ body {
     font-size: 1.6rem;
     line-height: 1.6;
 }
+
+
+.footer {
+    width: 100%;
+    margin: 10rem auto 0;
+    max-width: var(--max-width);
+    padding: 0 var(--gap-basic);
+}
+
+.footer-wrap {
+    background-color: var(--main-color);
+    border-radius: var(--radius-basic) var(--radius-basic) 0 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.foot-logo {
+    display: block;
+    width: 10rem;
+    aspect-ratio: 100 / 18;
+    background-image: url(../images/logo_black.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: -9999px;
+}
+
+.footer-text {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.footer-label {
+    font-weight: 600;
+    margin-right: 0.2rem;
+}
+
+.footer-value {
+    font-weight: 300;
+    margin-right: 0.6rem;
+    letter-spacing: -0.02rem;
+}
+
+.footer-text p {
+    font-weight: 300;
+    letter-spacing: -0.02rem;
+}
+
+.footer-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+}
+
+.social-icon {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    background-image: url(../images/icon_yt.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: -9999px;
+}
+
+.social-icon.facebook {
+    background-image: url(../images/icon_fb.png);
+}
+
+.social-icon.blog {
+    background-image: url(../images/icon_blog.png);
+}
+
+.social-icon.insta {
+    background-image: url(../images/icon_insta.png);
+}
+
+.social-icon.kakao {
+    background-image: url(../images/icon_kakao.png);
+}
