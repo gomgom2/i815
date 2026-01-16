@@ -1,4 +1,69 @@
+:root {
+    --main-color: rgb(0, 212, 141);
+    --max-width: 75rem;
+    --gap-basic: 0.5rem;
+    --radius-basic: 0.5rem;
+}
+
 body {
     background-color: rgb(235, 235, 235);
     color: rgb(17, 17, 17);
+}
+
+.nav-wrap {
+    width: 100%;
+    margin: 0 auto;
+    max-width: var(--max-width);
+    padding: 0 var(--gap-basic);
+}
+
+.nav-container {
+    position: relative;
+    width: 100%;
+    background-color: var(--main-color);
+    border-radius: 0 0 var(--radius-basic) var(--radius-basic);
+    display: flex;
+    justify-content: space-between;
+    min-height: 5rem;
+}
+
+.nav-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.top-logo {
+    display: block;
+    width: 10rem;
+    aspect-ratio: 100 / 18;
+    background-image: url(../images/logo_black.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: -9999px;
+}
+
+.nav-menu-list {
+    display: flex;
+    align-items: center;
+}
+
+.main-visual {
+    width: 100%;
+    margin: 0 auto;
+    max-width: var(--max-width);
+    padding: 0 var(--gap-basic);
+}
+
+.main-visual-video {
+    width: 100%;
+    overflow: hidden;
+    border-radius: var(--radius-basic);
+    margin-top: var(--gap-basic)
+}
+
+.main-visual-video video {
+    width: 100%;
 }
