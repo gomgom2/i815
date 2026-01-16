@@ -29,14 +29,26 @@
 .main-visual-text {
 	color: #fff;
 	z-index: 2;
-	padding: 2rem 0 3rem;
+	padding: 4rem 0 3rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+.main-visual-text-right {
+	width: 30%
 }
 
 .main-visual h1 {
 	font-family: Paperozi;
-	font-size: clamp(5rem, 5vw, 6rem);
+	font-size: 6rem;
 	font-weight: 700;
 	letter-spacing: -0.02em;
+	line-height: 1.3;
+}
+
+.main-visual-text-left span {
+	font-size: 2rem;
+	font-weight: 100;
 }
 
 .section {
